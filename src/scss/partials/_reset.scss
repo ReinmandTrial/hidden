@@ -1,0 +1,72 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 0px;
+}
+
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  outline: none;
+}
+
+img,a,svg,use,input,textarea,span {
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  line-height: inherit;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+input, textarea {
+  font-weight: inherit;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  &::placeholder {
+    color: inherit;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+address {
+  font-style: normal;
+}
+
+input[type=text]::-ms-clear { display: none; width: 0; height: 0; }
+input[type=text]::-ms-reveal { display: none; width: 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }

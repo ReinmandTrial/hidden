@@ -1,0 +1,87 @@
+body * {
+  font-weight: 400;
+}
+
+body {
+  background-color: $bg;
+  font-family: Object-Sans, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  color: $black;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 60px;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+h3 {
+  font-size: 40px;
+}
+p {
+  line-height: 1.56;
+}
+hr {
+  background-color: rgba($white, .5);
+  height: 2px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  line-height: 1;
+  font-size: 18px;
+  width: fit-content;
+    &_long {
+    padding-left: 51px;
+    padding-right: 51px;
+  }
+  &_short {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &_transparent {
+    &-blue {
+      border: 2px solid $blue;
+      color: $black;
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+    &-white {
+      border: 2px solid $white;
+      color: $white;
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+  }
+  &_white {
+    background-color: $white;
+    color: $black;
+  }
+  &_blue {
+    background-color: $blue;
+    color: $white;
+  }
+  &_white.btn_short {
+    color: $blue;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  &__link {
+    margin-right: 30px;
+  }
+}
