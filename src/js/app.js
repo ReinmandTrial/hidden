@@ -19,10 +19,32 @@ document.querySelectorAll('#open-modal').forEach(el => {
   })
 })
 document.querySelector('.modal').addEventListener('click', (e) => {
-  if(e.target.closest('.modal__content') !== document.querySelector('.modal__content')) {
+  if (e.target.closest('.modal__content') !== document.querySelector('.modal__content')) {
     document.querySelector('.modal').classList.remove('modal_active')
   }
 })
+
+// setTimeout(
+// function () {
+
+// var myFrame = document.getElementsByClassName("video");
+// var someObj = myFrame.document.getElementById('player');
+// iframe.contentWindow.document
+// someObj.style.display = 'none';
+
+var iframe = document.getElementsByTagName('iframe')[0];
+iframe.contentWindow.postMessage('text', '*');
+var iframeDoc = iframe.contentWindow.document;
+
+if (iframeDoc.readyState == 'complete') {
+  iframeDoc.body.style.backgroundColor = 'green';
+}
+iframe.onload = function () {
+  var iframeDoc2 = iframe.contentWindow.document;
+  iframeDoc2.body.style.backgroundColor = 'orange';
+}
+  // }, 2000
+// )
 
 
 

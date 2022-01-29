@@ -1,15 +1,15 @@
-@import 'partials/variables';
+@import "partials/variables";
 
 // Reset
 
-.choices__inner, 
+.choices__inner,
 .choices,
 .choices__list--dropdown .choices__item,
 .choices__input {
   font-size: inherit;
 }
 .choices__list--single,
-.choices[data-type*=select-one] .choices__inner,
+.choices[data-type*="select-one"] .choices__inner,
 .choices__list--dropdown .choices__item--selectable {
   padding: 0;
 }
@@ -25,7 +25,7 @@
 // Styles
 
 .choices__list--dropdown {
-  border: 1px solid rgba($black, .5);
+  border: 1px solid rgba($black, 0.5);
 }
 
 .choices__inner {
@@ -33,15 +33,15 @@
   padding-bottom: 16px !important;
   background: transparent;
   border-radius: 0;
-  border: 1px solid rgba($black, .5);
+  border: 1px solid rgba($black, 0.5);
 }
 
-.choices__item.choices__item--choice  {
+.choices__item.choices__item--choice {
   padding: 16px 10px;
 }
 
 .is-selected,
-.choices__item.choices__item--choice.choices__placeholder  {
+.choices__item.choices__item--choice.choices__placeholder {
   display: none;
 }
 

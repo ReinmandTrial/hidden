@@ -9,23 +9,25 @@
   </head>
   <body> 
     <div class="modal"> 
-      <div class="modal__content"> 
-        <h2 class="modal__title">Ready to get started?</h2>
-        <form class="modal__form">
-          <label class="modal__label">      
-            <div class="modal__text">Your name</div>
-            <input class="modal__input" type="text" required>
-          </label>
-          <label class="modal__label">        
-            <div class="modal__text">Your phone number</div>
-            <input class="modal__input" type="tel" required>
-          </label>
-          <label class="modal__label">        
-            <div class="modal__text">Your email</div>
-            <input class="modal__input" type="email" required>
-          </label>
-          <button class="modal__btn btn btn_white" type="submit">GET STARTED</button>
-        </form>
+      <div class="modal__body"> 
+        <div class="modal__content"> 
+          <h2 class="modal__title">Ready to get started?</h2>
+          <form class="modal__form">
+            <label class="modal__label">      
+              <div class="modal__text">Your name</div>
+              <input class="modal__input" type="text" required>
+            </label>
+            <label class="modal__label">        
+              <div class="modal__text">Your phone number</div>
+              <input class="modal__input" type="tel" required>
+            </label>
+            <label class="modal__label">        
+              <div class="modal__text">Your email</div>
+              <input class="modal__input" type="email" required>
+            </label>
+            <button class="modal__btn btn btn_white" type="submit">GET STARTED</button>
+          </form>
+        </div>
       </div>
     </div>
     <header class="header"> 
@@ -34,7 +36,7 @@
         <source src="./files/header-bg.mp4" type="video/mp4">Your browser does not support video
       </video>
       <div class="header__top">
-        <div class="header__top-container container"><picture><source srcset="img/header/logo.webp" type="image/webp"><img class="header__logo" src="img/header/logo.png" alt="Hidden Refunds Logo"></picture>
+        <div class="header__top-container container"><img class="header__logo" src="img/header/logo.png" alt="Hidden Refunds Logo">
           <button class="header__btn header__btn_hidden btn btn_white btn_long" id="open-modal" type="button">Learn More</button>
         </div>
       </div>
@@ -65,7 +67,7 @@
           </div>
         </div>
       </section>
-      <iframe class="video" src="https://player.vimeo.com/video/670963058?h=ccbe2fdb21" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe class="video" src="https://player.vimeo.com/video/670963058?h=ccbe2fdb21" frameborder="0" allow="autoplay; fullscreen" webkitAllowFullScreen allowfullscreen></iframe>
       <section class="benefits">
         <div class="benefits__container container"> 
           <h2 class="benefits__title">We are the Experts you can trust!</h2>
@@ -163,8 +165,8 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__top"><picture><source srcset="img/footer/logo.webp" type="image/webp"><img class="footer__logo" src="img/footer/logo.png" alt="Hidden Refunds Logo"></picture>
-          <div class="footer__sentence"><span class="footer__sentence-text">Ready to get started?</span><a class="footer__sentence-link btn btn_transparent-white btn_short" href="#">Qualify Now!</a></div>
+        <div class="footer__top"><img class="footer__logo" src="img/footer/logo.png" alt="Hidden Refunds Logo">
+          <div class="footer__sentence"><span class="footer__sentence-text">Ready to get started?</span><a class="footer__sentence-link btn btn_transparent-white btn_short" href="#">Qualify Me</a></div>
         </div>
         <hr class="footer__first-line">
         <div class="footer__center"><span class="footer__discount">Get your rebate. You deserve it!</span>
@@ -176,7 +178,7 @@
         <div class="footer__bottom"><a class="footer__link" href="#">Terms & Conditions</a><a class="footer__link" href="#">Privacy Policy</a></div>
         <hr>
       </div>
-    </footer>
+    </footer><script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="./js/app.min.js"> </script>
   </body>
 </html>
