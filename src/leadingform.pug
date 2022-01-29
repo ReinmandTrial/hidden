@@ -7,16 +7,16 @@ include html/opening.pug
         .leadingform__container.container
           h1.leadingform__main-title Tax Refund Credit Application
           ol.leadingform__step
-            li.leadingform__step-item.leadingform__step-item_active
-              button.leadingform__step-btn(data-goto="1")
+            li.leadingform__step-item
+              button.leadingform__step-btn.leadingform__step-btn_active(data-goto="1" data-step-btn="1")
                 span.leadingform__step-number 1
                 div.leadingform__step-text Getting Started
             li.leadingform__step-item
-              button.leadingform__step-btn(data-goto="2")
+              button.leadingform__step-btn(data-goto="2" data-step-btn="2")
                 span.leadingform__step-number 2
                 div.leadingform__step-text Company Info
             li.leadingform__step-item
-              button.leadingform__step-btn(data-goto="3")
+              button.leadingform__step-btn(data-goto="3" data-step-btn="3")
                 span.leadingform__step-number 3
                 div.leadingform__step-text Taxes & Payroll
           .leadingform__content.leadingform__content_active(data-step="1")

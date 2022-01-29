@@ -5,7 +5,6 @@ import cleanCss from 'gulp-clean-css';
 import webpcss from 'gulp-webpcss';
 import autoprefixer from 'gulp-autoprefixer';
 import groupCssMediaQueries from 'gulp-group-css-media-queries';
-import shorthand from 'gulp-shorthand';
 
 const sass = gulpSass(dartSass)
 
@@ -27,7 +26,6 @@ export const styles = () => {
       cascade: true
     })))
     // .pipe(app.plugins.if(app.isBuild, app.gulp.dest(app.path.build.styles)))
-    // .pipe(app.plugins.if(app.isBuild, shorthand()))
     // .pipe(app.plugins.if(app.isBuild, cleanCss({
     //   grid: true,
     //   level: 2

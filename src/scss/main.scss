@@ -1,10 +1,10 @@
 @import "normalize.css/normalize";
 @import "choices.js/public/assets/styles/choices";
-@import "modules/choices.scss";
+@import "modules/choices";
 @import "partials/reset";
 @import "partials/fonts";
 @import "partials/variables";
-@import "modules/common.scss";
+@import "modules/common";
 
 .header {
   color: $white;
@@ -578,12 +578,18 @@
     }
     &-item {
       font-size: 16px;
-      background-color: #f6f6f4;
-      color: #777775;
       width: calc(100% / 3);
       @media (max-width: 768px) {
         width: 100%;
       }
+    }
+    &-btn {
+      background-color: #f6f6f4;
+      color: #777775;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding: 9px;
       &_active {
         background-color: $white;
         .leadingform__step-number {
@@ -594,12 +600,6 @@
           color: $black;
         }
       }
-    }
-    &-btn {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      padding: 9px;
     }
     &-number {
       display: flex;

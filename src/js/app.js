@@ -31,6 +31,10 @@ document.querySelectorAll('[data-goto]').forEach(btn => {
       step.classList.remove('leadingform__content_active')
     })
     document.querySelector(`[data-step="${thisBtn}"]`).classList.add('leadingform__content_active')
+    document.querySelectorAll('[data-step-btn]').forEach(btn => {
+      btn.classList.remove('leadingform__step-btn_active')
+    })
+    document.querySelector(`[data-step-btn="${thisBtn}"]`).classList.add('leadingform__step-btn_active')
   })
 })
 
