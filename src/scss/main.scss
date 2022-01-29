@@ -166,7 +166,6 @@
   @media (max-width: 576px) {
     height: 250px;
   }
-  // background-color: crimson;
 }
 
 .benefits {
@@ -578,13 +577,10 @@
       flex-direction: column;
     }
     &-item {
-      display: flex;
-      align-items: center;
       font-size: 16px;
-      width: calc(100% / 3);
-      padding: 9px;
       background-color: #f6f6f4;
       color: #777775;
+      width: calc(100% / 3);
       @media (max-width: 768px) {
         width: 100%;
       }
@@ -599,6 +595,12 @@
         }
       }
     }
+    &-btn {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding: 9px;
+    }
     &-number {
       display: flex;
       align-items: center;
@@ -612,6 +614,10 @@
 
   &__content {
     background-color: $white;
+    display: none;
+    &_active {
+      display: block;
+    }
     &-title {
       text-align: left;
       font-size: 22px;
@@ -768,7 +774,6 @@
   overflow-y: auto;
   &_active {
     display: block;
-    // display: flex;
   }
   color: $white;
   &__body {

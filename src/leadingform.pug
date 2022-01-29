@@ -1,0 +1,205 @@
+include html/opening.pug
+    include html/modal.pug
+    main.leadingform
+      .leadingform__started
+        .leadingform__btn-wrap
+          button#open-modal.leadingform__btn.btn.btn_blue.btn_long(type="button") Learn More
+        .leadingform__container.container
+          h1.leadingform__main-title Tax Refund Credit Application
+          ol.leadingform__step
+            li.leadingform__step-item.leadingform__step-item_active
+              button.leadingform__step-btn(data-goto="1")
+                span.leadingform__step-number 1
+                div.leadingform__step-text Getting Started
+            li.leadingform__step-item
+              button.leadingform__step-btn(data-goto="2")
+                span.leadingform__step-number 2
+                div.leadingform__step-text Company Info
+            li.leadingform__step-item
+              button.leadingform__step-btn(data-goto="3")
+                span.leadingform__step-number 3
+                div.leadingform__step-text Taxes & Payroll
+          .leadingform__content.leadingform__content_active(data-step="1")
+            h2.leadingform__content-title Step 1 of 3 – Getting Started
+            .leadingform__content-container.container
+              p.leadingform__content-desc Let's get started. We just need a few details from you. Your information is kept confidential according to CPA standards and is needed to determine if you qualify for these substantial tax rebates and government incentives.
+              .leadingform__form-wrap
+                form.leadingform__form(action="") 
+                  label.leadingform__label 
+                    .leadingform__label-text First Name
+                      span.leadingform__explanation *
+                    input.leadingform__input(type="text" required name="name")
+                  label.leadingform__label 
+                    .leadingform__label-text Last name
+                      span.leadingform__explanation *
+                    input.leadingform__input(type="text" required name="surname")
+                  label.leadingform__label.leadingform__label_long 
+                    .leadingform__label-text Email
+                      span.leadingform__explanation *
+                    input.leadingform__input(type="email" required name="email") 
+                  label.leadingform__label 
+                    .leadingform__label-text Phone number
+                      span.leadingform__explanation *
+                    input.leadingform__input(type="tel" required name="tel")
+                  label.leadingform__label 
+                    .leadingform__label-text Extension
+                    input.leadingform__input(type="text" required name="extension")
+                  label.leadingform__label.leadingform__label_long 
+                    .leadingform__label-text What is your role or job title?
+                      span.leadingform__explanation *
+                    input.leadingform__input(type="text" required name="jobPosition")
+                  label.leadingform__label.leadingform__label_long 
+                    .leadingform__label-text How did you hear about us?*
+                      span.leadingform__explanation *
+                    select.leadingform__select(name="Lorem") 
+                      option(value="") Please select 
+                      option(value="Lorem1") Lorem ipsum1
+                      option(value="Lorem2") Lorem ipsum2
+                      option(value="Lorem3") Lorem ipsum3
+                      option(value="Lorem4") Lorem ipsum4
+                      option(value="Lorem5") Lorem ipsum5
+                button.leadingform__link.btn.btn_blue.btn_long(type="submit" data-goto="2") Next Step
+          .leadingform__content(data-step="2")
+                h2.leadingform__content-title Step 2 of 3 – Company Info
+                .leadingform__content-container.container
+                  .leadingform__radio-wrap
+                    form.leadingform__form(action="") 
+                      label.leadingform__label.leadingform__label_long
+                        .leadingform__label-text.leadingform__label-text_margin3 Legal company name
+                          span.leadingform__explanation *
+                        .leadingform__label-desc This is your full legal company name including the Inc. or LLC, etc.
+                        input.leadingform__input(type="text" required name="companyName")
+                      label.leadingform__label
+                        .leadingform__label-text Trade name or DBA
+                        input.leadingform__input(type="text" placeholder="if applicable" required name="tradeName")
+                      label.leadingform__label
+                        .leadingform__label-text Industry
+                        select.leadingform__select(name="industry") 
+                          option(value="") Please select 
+                          option(value="Lorem1") Lorem ipsum1
+                          option(value="Lorem2") Lorem ipsum2
+                          option(value="Lorem3") Lorem ipsum3
+                          option(value="Lorem4") Lorem ipsum4
+                          option(value="Lorem5") Lorem ipsum5
+                      label.leadingform__label.leadingform__label_long 
+                        .leadingform__label-text Approximately, what is your annual company revenue?
+                          span.leadingform__explanation *
+                        select.leadingform__select(name="revenue") 
+                          option(value="") Please select 
+                          option(value="Lorem1") Lorem ipsum1
+                          option(value="Lorem2") Lorem ipsum2
+                          option(value="Lorem3") Lorem ipsum3
+                          option(value="Lorem4") Lorem ipsum4
+                          option(value="Lorem5") Lorem ipsum5
+                      label.leadingform__label.leadingform__label_long 
+                        .leadingform__label-text Entity filing type
+                          span.leadingform__explanation *
+                        select.leadingform__select(name="entityFilingType") 
+                          option(value="") Please select 
+                          option(value="Lorem1") Lorem ipsum1
+                          option(value="Lorem2") Lorem ipsum2
+                          option(value="Lorem3") Lorem ipsum3
+                          option(value="Lorem4") Lorem ipsum4
+                          option(value="Lorem5") Lorem ipsum5
+                      label.leadingform__label.leadingform__label_long
+                        .leadingform__label-text Website URL
+                        input.leadingform__input(type="text" name="webUrl")
+                      label.leadingform__label.leadingform__label_long
+                        .leadingform__label-text Address line 1
+                          span.leadingform__explanation *
+                        input.leadingform__input(type="text" name="address1")
+                      label.leadingform__label.leadingform__label_long
+                        .leadingform__label-text Address line 2
+                        input.leadingform__input(type="text" name="address2")
+                      label.leadingform__label.leadingform__label_short
+                        .leadingform__label-text City
+                          span.leadingform__explanation *
+                        input.leadingform__input(type="text" required name="city")
+                      label.leadingform__label.leadingform__label_short
+                        .leadingform__label-text State
+                          span.leadingform__explanation *
+                        select.leadingform__select(name="state") 
+                          option(value="") Please select 
+                          option(value="Lorem1") Lorem ipsum1
+                          option(value="Lorem2") Lorem ipsum2
+                          option(value="Lorem3") Lorem ipsum3
+                          option(value="Lorem4") Lorem ipsum4
+                          option(value="Lorem5") Lorem ipsum5
+                      label.leadingform__label.leadingform__label_short
+                        .leadingform__label-text Postal code
+                          span.leadingform__explanation *
+                        input.leadingform__input(type="number" required name="postalCode")
+                      .leadingform__label-checkbox-wrap
+                        label.leadingform__label.leadingform__label_checkbox
+                          input.leadingform__checkbox.visually-hidden(type="checkbox" name="agreement" required)
+                          .leadingform__label-text.leadingform__label-text_checkbox I agree to terms and conditions to process my data
+                            span.leadingform__explanation *
+                    button.leadingform__link.btn.btn_blue.btn_long(type="submit" data-goto="3") Next Step         
+          .leadingform__content(data-step="3")
+                h2.leadingform__content-title Step 3 of 3 – Taxes & Payroll
+                .leadingform__content-container.container
+                  .leadingform__form-wrap
+                    form.leadingform__form(action="") 
+                      .leadingform__radio-wrap
+                        .leadingform__radio-question What do you usually pay in annual taxes?
+                          span.leadingform__explanation *
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="payAnnualTaxes" value="less-25k" checked)
+                          .leadingform__label-text.leadingform__label-text_radio Less than $25K
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="payAnnualTaxes" value="25k-100k")
+                          .leadingform__label-text.leadingform__label-text_radio $25K - 100K
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="payAnnualTaxes" value="over-100k")
+                          .leadingform__label-text.leadingform__label-text_radio $100K +
+                      label.leadingform__label.leadingform__label_long
+                        .leadingform__label-text Average number of W2 employees on payroll for 2019
+                          span.leadingform__explanation *
+                        input.leadingform__input(type="number" name="employees2019")
+                      label.leadingform__label.leadingform__label_long
+                        .leadingform__label-text Average number of W2 employees on payroll for 2020
+                          span.leadingform__explanation *
+                        input.leadingform__input(type="number" name="employees2020")
+                      label.leadingform__label.leadingform__label_long
+                        .leadingform__label-text Average number of W2 employees on payroll for 2021*
+                          span.leadingform__explanation *
+                        input.leadingform__input(type="number" required name="employees2021")
+                      .leadingform__radio-wrap
+                        .leadingform__radio-question Does your company or its partners have 80% or more ownership in any other businesses?
+                            span.leadingform__explanation *
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="participationShare" value="true")
+                          .leadingform__label-text.leadingform__label-text_radio Yes
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="participationShare" value="false" checked)
+                          .leadingform__label-text.leadingform__label-text_radio No
+                      .leadingform__radio-wrap
+                        .leadingform__radio-question Have you qualified for and claimed any federal government incentives or tax credits within the past three years?
+                            span.leadingform__explanation *
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="privileges" value="true")
+                          .leadingform__label-text.leadingform__label-text_radio Yes
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="privileges" value="false" checked)
+                          .leadingform__label-text.leadingform__label-text_radio No
+                      .leadingform__radio-wrap
+                        .leadingform__radio-question At any point in time during 2020 or 2021 did you utilize a PEO (professional employer organization) as your payroll provider?
+                            span.leadingform__explanation *
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="PEO" value="true")
+                          .leadingform__label-text.leadingform__label-text_radio Yes
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="PEO" value="false" checked)
+                          .leadingform__label-text.leadingform__label-text_radio No
+                      .leadingform__radio-wrap
+                        .leadingform__radio-question Pertaining to the partners in your company, other than their spouse, are there any immeditate family members (i.e children, siblings, parents) on payroll?
+                            span.leadingform__explanation *
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="familyMembers" value="true")
+                          .leadingform__label-text.leadingform__label-text_radio Yes
+                        label.leadingform__label.leadingform__label_radio
+                          input.leadingform__radio.visually-hidden(type="radio" name="familyMembers" value="false" checked)
+                          .leadingform__label-text.leadingform__label-text_radio No
+                    button.leadingform__link.btn.btn_blue.btn_long(type="submit") Submit
+    include html/footer.pug
+    include html/ending.pug

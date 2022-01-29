@@ -1654,13 +1654,10 @@ hr {
   }
 }
 .leadingform__step-item {
-  display: flex;
-  align-items: center;
   font-size: 16px;
-  width: 33.3333333333%;
-  padding: 9px;
   background-color: #f6f6f4;
   color: #777775;
+  width: 33.3333333333%;
 }
 @media (max-width: 768px) {
   .leadingform__step-item {
@@ -1677,6 +1674,12 @@ hr {
 .leadingform__step-item_active .leadingform__step-text {
   color: #000;
 }
+.leadingform__step-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 9px;
+}
 .leadingform__step-number {
   display: flex;
   align-items: center;
@@ -1688,6 +1691,10 @@ hr {
 }
 .leadingform__content {
   background-color: #fff;
+  display: none;
+}
+.leadingform__content_active {
+  display: block;
 }
 .leadingform__content-title {
   text-align: left;

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+  <body> 
+    <div class="modal"> 
+      <div class="modal__body"> 
+        <div class="modal__content"> 
+          <h2 class="modal__title">Ready to get started?</h2>
+          <form class="modal__form">
+            <label class="modal__label">      
+              <div class="modal__text">Your name</div>
+              <input class="modal__input" type="text" required>
+            </label>
+            <label class="modal__label">        
+              <div class="modal__text">Your phone number</div>
+              <input class="modal__input" type="tel" required>
+            </label>
+            <label class="modal__label">        
+              <div class="modal__text">Your email</div>
+              <input class="modal__input" type="email" required>
+            </label>
+            <button class="modal__btn btn btn_white" type="submit">GET STARTED</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <main class="leadingform">
+      <div class="leadingform__started">
+        <div class="leadingform__btn-wrap">
+          <button class="leadingform__btn btn btn_blue btn_long" id="open-modal" type="button">Learn More</button>
+        </div>
+        <div class="leadingform__container container">
+          <h1 class="leadingform__main-title">Tax Refund Credit Application</h1>
+          <ol class="leadingform__step">
+            <li class="leadingform__step-item leadingform__step-item_active">
+              <button class="leadingform__step-btn" data-goto="1"><span class="leadingform__step-number">1</span>
+                <div class="leadingform__step-text">Getting Started</div>
+              </button>
+            </li>
+            <li class="leadingform__step-item">
+              <button class="leadingform__step-btn" data-goto="2"><span class="leadingform__step-number">2</span>
+                <div class="leadingform__step-text">Company Info</div>
+              </button>
+            </li>
+            <li class="leadingform__step-item">
+              <button class="leadingform__step-btn" data-goto="3"><span class="leadingform__step-number">3</span>
+                <div class="leadingform__step-text">Taxes & Payroll</div>
+              </button>
+            </li>
+          </ol>
+          <div class="leadingform__content leadingform__content_active" data-step="1">
+            <h2 class="leadingform__content-title">Step 1 of 3 – Getting Started</h2>
+            <div class="leadingform__content-container container">
+              <p class="leadingform__content-desc">Let's get started. We just need a few details from you. Your information is kept confidential according to CPA standards and is needed to determine if you qualify for these substantial tax rebates and government incentives.</p>
+              <div class="leadingform__form-wrap">
+                <form class="leadingform__form" action=""> 
+                  <label class="leadingform__label"> 
+                    <div class="leadingform__label-text">First Name<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="text" required name="name">
+                  </label>
+                  <label class="leadingform__label"> 
+                    <div class="leadingform__label-text">Last name<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="text" required name="surname">
+                  </label>
+                  <label class="leadingform__label leadingform__label_long"> 
+                    <div class="leadingform__label-text">Email<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="email" required name="email">
+                  </label>
+                  <label class="leadingform__label"> 
+                    <div class="leadingform__label-text">Phone number<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="tel" required name="tel">
+                  </label>
+                  <label class="leadingform__label"> 
+                    <div class="leadingform__label-text">Extension</div>
+                    <input class="leadingform__input" type="text" required name="extension">
+                  </label>
+                  <label class="leadingform__label leadingform__label_long"> 
+                    <div class="leadingform__label-text">What is your role or job title?<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="text" required name="jobPosition">
+                  </label>
+                  <label class="leadingform__label leadingform__label_long"> 
+                    <div class="leadingform__label-text">How did you hear about us?*<span class="leadingform__explanation">*</span></div>
+                    <select class="leadingform__select" name="Lorem"> 
+                      <option value="">Please select </option>
+                      <option value="Lorem1">Lorem ipsum1</option>
+                      <option value="Lorem2">Lorem ipsum2</option>
+                      <option value="Lorem3">Lorem ipsum3</option>
+                      <option value="Lorem4">Lorem ipsum4</option>
+                      <option value="Lorem5">Lorem ipsum5</option>
+                    </select>
+                  </label>
+                </form>
+                <button class="leadingform__link btn btn_blue btn_long" type="submit" data-goto="2">Next Step</button>
+              </div>
+            </div>
+          </div>
+          <div class="leadingform__content" data-step="2">
+            <h2 class="leadingform__content-title">Step 2 of 3 – Company Info</h2>
+            <div class="leadingform__content-container container">
+              <div class="leadingform__radio-wrap">
+                <form class="leadingform__form" action=""> 
+                  <label class="leadingform__label leadingform__label_long">
+                    <div class="leadingform__label-text leadingform__label-text_margin3">Legal company name<span class="leadingform__explanation">*</span></div>
+                    <div class="leadingform__label-desc">This is your full legal company name including the Inc. or LLC, etc.</div>
+                    <input class="leadingform__input" type="text" required name="companyName">
+                  </label>
+                  <label class="leadingform__label">
+                    <div class="leadingform__label-text">Trade name or DBA</div>
+                    <input class="leadingform__input" type="text" placeholder="if applicable" required name="tradeName">
+                  </label>
+                  <label class="leadingform__label">
+                    <div class="leadingform__label-text">Industry</div>
+                    <select class="leadingform__select" name="industry"> 
+                      <option value="">Please select </option>
+                      <option value="Lorem1">Lorem ipsum1</option>
+                      <option value="Lorem2">Lorem ipsum2</option>
+                      <option value="Lorem3">Lorem ipsum3</option>
+                      <option value="Lorem4">Lorem ipsum4</option>
+                      <option value="Lorem5">Lorem ipsum5</option>
+                    </select>
+                  </label>
+                  <label class="leadingform__label leadingform__label_long"> 
+                    <div class="leadingform__label-text">Approximately, what is your annual company revenue?<span class="leadingform__explanation">*</span></div>
+                    <select class="leadingform__select" name="revenue"> 
+                      <option value="">Please select </option>
+                      <option value="Lorem1">Lorem ipsum1</option>
+                      <option value="Lorem2">Lorem ipsum2</option>
+                      <option value="Lorem3">Lorem ipsum3</option>
+                      <option value="Lorem4">Lorem ipsum4</option>
+                      <option value="Lorem5">Lorem ipsum5</option>
+                    </select>
+                  </label>
+                  <label class="leadingform__label leadingform__label_long"> 
+                    <div class="leadingform__label-text">Entity filing type<span class="leadingform__explanation">*</span></div>
+                    <select class="leadingform__select" name="entityFilingType"> 
+                      <option value="">Please select </option>
+                      <option value="Lorem1">Lorem ipsum1</option>
+                      <option value="Lorem2">Lorem ipsum2</option>
+                      <option value="Lorem3">Lorem ipsum3</option>
+                      <option value="Lorem4">Lorem ipsum4</option>
+                      <option value="Lorem5">Lorem ipsum5</option>
+                    </select>
+                  </label>
+                  <label class="leadingform__label leadingform__label_long">
+                    <div class="leadingform__label-text">Website URL</div>
+                    <input class="leadingform__input" type="text" name="webUrl">
+                  </label>
+                  <label class="leadingform__label leadingform__label_long">
+                    <div class="leadingform__label-text">Address line 1<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="text" name="address1">
+                  </label>
+                  <label class="leadingform__label leadingform__label_long">
+                    <div class="leadingform__label-text">Address line 2</div>
+                    <input class="leadingform__input" type="text" name="address2">
+                  </label>
+                  <label class="leadingform__label leadingform__label_short">
+                    <div class="leadingform__label-text">City<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="text" required name="city">
+                  </label>
+                  <label class="leadingform__label leadingform__label_short">
+                    <div class="leadingform__label-text">State<span class="leadingform__explanation">*</span></div>
+                    <select class="leadingform__select" name="state"> 
+                      <option value="">Please select </option>
+                      <option value="Lorem1">Lorem ipsum1</option>
+                      <option value="Lorem2">Lorem ipsum2</option>
+                      <option value="Lorem3">Lorem ipsum3</option>
+                      <option value="Lorem4">Lorem ipsum4</option>
+                      <option value="Lorem5">Lorem ipsum5</option>
+                    </select>
+                  </label>
+                  <label class="leadingform__label leadingform__label_short">
+                    <div class="leadingform__label-text">Postal code<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="number" required name="postalCode">
+                  </label>
+                  <div class="leadingform__label-checkbox-wrap">
+                    <label class="leadingform__label leadingform__label_checkbox">
+                      <input class="leadingform__checkbox visually-hidden" type="checkbox" name="agreement" required>
+                      <div class="leadingform__label-text leadingform__label-text_checkbox">I agree to terms and conditions to process my data<span class="leadingform__explanation">*</span></div>
+                    </label>
+                  </div>
+                </form>
+                <button class="leadingform__link btn btn_blue btn_long" type="submit" data-goto="3">Next Step         </button>
+              </div>
+            </div>
+          </div>
+          <div class="leadingform__content" data-step="3">
+            <h2 class="leadingform__content-title">Step 3 of 3 – Taxes & Payroll</h2>
+            <div class="leadingform__content-container container">
+              <div class="leadingform__form-wrap">
+                <form class="leadingform__form" action=""> 
+                  <div class="leadingform__radio-wrap">
+                    <div class="leadingform__radio-question">What do you usually pay in annual taxes?<span class="leadingform__explanation">*</span></div>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="payAnnualTaxes" value="less-25k" checked>
+                      <div class="leadingform__label-text leadingform__label-text_radio">Less than $25K</div>
+                    </label>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="payAnnualTaxes" value="25k-100k">
+                      <div class="leadingform__label-text leadingform__label-text_radio">$25K - 100K</div>
+                    </label>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="payAnnualTaxes" value="over-100k">
+                      <div class="leadingform__label-text leadingform__label-text_radio">$100K +</div>
+                    </label>
+                  </div>
+                  <label class="leadingform__label leadingform__label_long">
+                    <div class="leadingform__label-text">Average number of W2 employees on payroll for 2019<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="number" name="employees2019">
+                  </label>
+                  <label class="leadingform__label leadingform__label_long">
+                    <div class="leadingform__label-text">Average number of W2 employees on payroll for 2020<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="number" name="employees2020">
+                  </label>
+                  <label class="leadingform__label leadingform__label_long">
+                    <div class="leadingform__label-text">Average number of W2 employees on payroll for 2021*<span class="leadingform__explanation">*</span></div>
+                    <input class="leadingform__input" type="number" required name="employees2021">
+                  </label>
+                  <div class="leadingform__radio-wrap">
+                    <div class="leadingform__radio-question">Does your company or its partners have 80% or more ownership in any other businesses?<span class="leadingform__explanation">*</span></div>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="participationShare" value="true">
+                      <div class="leadingform__label-text leadingform__label-text_radio">Yes</div>
+                    </label>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="participationShare" value="false" checked>
+                      <div class="leadingform__label-text leadingform__label-text_radio">No</div>
+                    </label>
+                  </div>
+                  <div class="leadingform__radio-wrap">
+                    <div class="leadingform__radio-question">Have you qualified for and claimed any federal government incentives or tax credits within the past three years?<span class="leadingform__explanation">*</span></div>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="privileges" value="true">
+                      <div class="leadingform__label-text leadingform__label-text_radio">Yes</div>
+                    </label>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="privileges" value="false" checked>
+                      <div class="leadingform__label-text leadingform__label-text_radio">No</div>
+                    </label>
+                  </div>
+                  <div class="leadingform__radio-wrap">
+                    <div class="leadingform__radio-question">At any point in time during 2020 or 2021 did you utilize a PEO (professional employer organization) as your payroll provider?<span class="leadingform__explanation">*</span></div>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="PEO" value="true">
+                      <div class="leadingform__label-text leadingform__label-text_radio">Yes</div>
+                    </label>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="PEO" value="false" checked>
+                      <div class="leadingform__label-text leadingform__label-text_radio">No</div>
+                    </label>
+                  </div>
+                  <div class="leadingform__radio-wrap">
+                    <div class="leadingform__radio-question">Pertaining to the partners in your company, other than their spouse, are there any immeditate family members (i.e children, siblings, parents) on payroll?<span class="leadingform__explanation">*</span></div>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="familyMembers" value="true">
+                      <div class="leadingform__label-text leadingform__label-text_radio">Yes</div>
+                    </label>
+                    <label class="leadingform__label leadingform__label_radio">
+                      <input class="leadingform__radio visually-hidden" type="radio" name="familyMembers" value="false" checked>
+                      <div class="leadingform__label-text leadingform__label-text_radio">No</div>
+                    </label>
+                  </div>
+                </form>
+                <button class="leadingform__link btn btn_blue btn_long" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top"><img class="footer__logo" src="img/footer/logo.png" alt="Hidden Refunds Logo">
+          <div class="footer__sentence"><span class="footer__sentence-text">Ready to get started?</span><a class="footer__sentence-link btn btn_transparent-white btn_short" href="#">Qualify Me</a></div>
+        </div>
+        <hr class="footer__first-line">
+        <div class="footer__center"><span class="footer__discount">Get your rebate. You deserve it!</span>
+          <div class="footer__info"><span class="footer__info-title">Where To Find Us:</span><span class="footer__info-text">Irvine, CA</span></div>
+          <div class="footer__info"><span class="footer__info-title">Contact Us:</span><a class="footer__info-text" href="mailto:hello@innovationrefunds.com">hello@innovationrefunds.com </a><a class="footer__info-text" href="tel:+18556531083">(855) 653-1083</a>
+            <address class="footer__info-text"> </address>9600 Great Hills Trail, #100E <br>Austin, TX 78759
+          </div>
+        </div>
+        <div class="footer__bottom"><a class="footer__link" href="#">Terms & Conditions</a><a class="footer__link" href="#">Privacy Policy</a></div>
+        <hr>
+      </div>
+    </footer>
+    <script src="./js/app.min.js"> </script>
+  </body>
+</html>

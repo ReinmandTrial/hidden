@@ -24,29 +24,15 @@ document.querySelector('.modal').addEventListener('click', (e) => {
   }
 })
 
-// setTimeout(
-// function () {
-
-// var myFrame = document.getElementsByClassName("video");
-// var someObj = myFrame.document.getElementById('player');
-// iframe.contentWindow.document
-// someObj.style.display = 'none';
-
-var iframe = document.getElementsByTagName('iframe')[0];
-iframe.contentWindow.postMessage('text', '*');
-var iframeDoc = iframe.contentWindow.document;
-
-if (iframeDoc.readyState == 'complete') {
-  iframeDoc.body.style.backgroundColor = 'green';
-}
-iframe.onload = function () {
-  var iframeDoc2 = iframe.contentWindow.document;
-  iframeDoc2.body.style.backgroundColor = 'orange';
-}
-  // }, 2000
-// )
-
-
+document.querySelectorAll('[data-goto]').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    const thisBtn = e.target.closest('[data-goto]').dataset.goto
+    document.querySelectorAll('[data-step]').forEach(step => {
+      step.classList.remove('leadingform__content_active')
+    })
+    document.querySelector(`[data-step="${thisBtn}"]`).classList.add('leadingform__content_active')
+  })
+})
 
 
 
