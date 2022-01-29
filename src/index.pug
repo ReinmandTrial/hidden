@@ -1,12 +1,5 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
-    link(rel="stylesheet", href="./css/main.min.css")
-  body 
+include html/opening.pug
+    include html/modal.pug
     header.header 
       video.header__bg(preload loop autoplay muted) 
         source(src="./files/header-bg.webm", type="video/webm")
@@ -15,11 +8,12 @@ html(lang="en")
       .header__top
         .header__top-container.container
           img.header__logo(src="@img/header/logo.png", alt="Hidden Refunds Logo")
-          button.header__btn.btn.btn_white.btn_long(type="button") Learn More
+          button#open-modal.header__btn.header__btn_hidden.btn.btn_white.btn_long(type="button") Learn More
       .header__bottom 
         .header__bottom-container.container
           h1.header__title Quickly Qualify Your Business To Get Your Government Refund!
-          a.header__link.btn.btn_white.btn_short(href="#") Qualify Now!
+          a.header__link.btn.btn_white.btn_short(href="./leadingform-started.html") Qualify Now!
+          button#open-modal.header__btn.header__btn_visible.header__btn_hidden.btn.btn_transparent-white.btn_long(type="button") Learn More
     main 
       section.about
         .about__container.container
@@ -38,8 +32,8 @@ html(lang="en")
               .about__info-img
           h2.about__title.about__title_2 We’ve already qualified hundreds of businesses like yours for over $400 million in relief funds!
           .btn-wrapper
-            a.btn-wrapper__link.btn.btn_blue.btn_short(href="#") Qualify Now!
-            button.btn-wrapper__btn.btn.btn_transparent-blue.btn_long(type="button") Learn More
+            a.btn-wrapper__link.btn.btn_blue.btn_short(href="./leadingform-started.html") Qualify Now!
+            button#open-modal.btn-wrapper__btn.btn.btn_transparent-blue.btn_long(type="button") Learn More
       iframe.video(src="https://player.vimeo.com/video/670963058?h=ccbe2fdb21" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
       section.benefits
         .benefits__container.container 
@@ -64,8 +58,8 @@ html(lang="en")
               h3.benefits__item-title Tax Experts
               p.benefits__item-desc Your tax credits might be hidden, but our dedicated CPAs and Attorneys are experts at finding the refund you deserve.
           .btn-wrapper
-            a.btn-wrapper__link.btn.btn_blue.btn_short(href="#") Qualify Now!
-            button.btn-wrapper__btn.btn.btn_transparent-blue.btn_long(type="button") Learn More
+            a.btn-wrapper__link.btn.btn_blue.btn_short(href="./leadingform-started.html") Qualify Now!
+            button#open-modal.btn-wrapper__btn.btn.btn_transparent-blue.btn_long(type="button") Learn More
       section.explanation
         .explanation__container.container
           h2.explanation__title How It Works
@@ -74,18 +68,18 @@ html(lang="en")
               .explanation__item-text
                 span.explanation__item-numbering Step 1
                 h3.explanation__item-title Quick 5 minute application
-                p.explanation__desc Simply provide your information in the 5 Minute application to qualify your company’s eligibility to receive the Employee Retention Credit.
+                p.explanation__item-desc Simply provide your information in the 5 Minute application to qualify your company’s eligibility to receive the Employee Retention Credit.
               .explanation__icon-wrap
                 svg.explanation__icon.explanation__icon_laptop
                   use(xlink:href="@img/icons.svg#laptop")
             li.explanation__item
-              .explanation__icon-wrap
+              .explanation__icon-wrap.explanation__icon-wrap_order
                 svg.explanation__icon.explanation__icon_worker-typing
                   use(xlink:href="@img/icons.svg#worker-typing")
               .explanation__item-text
                 span.explanation__item-numbering Step 2
                 h3.explanation__item-title Submit Information to the Hidden Refunds Team.
-                p.explanation__desc Your information will be reviewed by our highly-qualified team of CPAs and attorneys who will validate and confirm the credits that your company may be entitled to receive. Once the assessment is completed, we’ll send you a report of your expected Employee Retention Credit.
+                p.explanation__item-desc Your information will be reviewed by our highly-qualified team of CPAs and attorneys who will validate and confirm the credits that your company may be entitled to receive. Once the assessment is completed, we’ll send you a report of your expected Employee Retention Credit.
             li.explanation__item
               .explanation__item-text
                 span.explanation__item-numbering Step 3
@@ -93,13 +87,13 @@ html(lang="en")
                   |We complete the application, 
                   br
                   |you collect your refund!
-                p.explanation__desc Our experts submit the formal request for Employee Retention Credit.
+                p.explanation__item-desc Our experts submit the formal request for Employee Retention Credit.
               .explanation__icon-wrap
                 svg.explanation__icon.explanation__icon_worker-counting
                   use(xlink:href="@img/icons.svg#worker-counting")
           .btn-wrapper
-            a.btn-wrapper__link.btn.btn_white.btn_short(href="#") Qualify Now!
-            button.btn-wrapper__btn.btn.btn_transparent-white.btn_long(type="button") Learn More
+            a.btn-wrapper__link.btn.btn_white.btn_short(href="./leadingform-started.html") Qualify Now!
+            button#open-modal.btn-wrapper__btn.btn.btn_transparent-white.btn_long(type="button") Learn More
       section.mission
         .container.mission__container 
           .mission__content
@@ -108,7 +102,7 @@ html(lang="en")
               strong.mission__subtitle To give you the money that has been hidden from you because businesses like yours are the backbone of our great nation
             p.mission__desc Government cash benefits have long been hidden from the hardest working class in our country. It is our mission to utilize the team of tax attorneys, CPAs, and experts to give back what belongs to those businesses who deserve it the most because they provide our people with exceptional products and services, which drive our country's growth and prosperity.
           .btn-wrapper
-            a.btn-wrapper__link.btn.btn_blue.btn_short(href="#") Qualify Now!
-            button.btn-wrapper__btn.btn.btn_transparent-blue.btn_long(type="button") Learn More
+            a.btn-wrapper__link.btn.btn_blue.btn_short(href="./leadingform-started.html") Qualify Now!
+            button#open-modal.btn-wrapper__btn.btn.btn_transparent-blue.btn_long(type="button") Learn More
     include html/footer.pug
-    script(src="./js/app.min.js") 
+    include html/ending.pug

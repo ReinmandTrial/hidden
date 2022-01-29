@@ -23,11 +23,11 @@ export const styles = () => {
     })))
     .pipe(app.plugins.if(app.isBuild, autoprefixer({
       grid: true,
-      overrideBrowserslist: ["last 3 versions"],
+      // overrideBrowserslist: ["last 3 versions"],
       cascade: true
     })))
     // .pipe(app.plugins.if(app.isBuild, app.gulp.dest(app.path.build.styles)))
-    .pipe(app.plugins.if(app.isBuild, shorthand()))
+    // .pipe(app.plugins.if(app.isBuild, shorthand()))
     // .pipe(app.plugins.if(app.isBuild, cleanCss({
     //   grid: true,
     //   level: 2

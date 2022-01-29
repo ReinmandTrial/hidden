@@ -1,0 +1,96 @@
+include html/opening.pug
+    include html/modal.pug
+    main.leadingform
+      .leadingform__btn-wrap
+        button#open-modal.leadingform__btn.btn.btn_blue.btn_long(type="button") Learn More
+      .leadingform__container.container
+        h1.leadingform__main-title Tax Refund Credit Application
+        ol.leadingform__step
+          li.leadingform__step-item
+            span.leadingform__step-number 1
+            div.leadingform__step-text Getting Started
+          li.leadingform__step-item.leadingform__step-item_active
+            span.leadingform__step-number 2
+            div.leadingform__step-text Company Info
+          li.leadingform__step-item
+            span.leadingform__step-number 3
+            div.leadingform__step-text Taxes & Payroll
+        .leadingform__content
+          h2.leadingform__content-title Step 2 of 3 – Company Info
+          .leadingform__content-container.container
+            .leadingform__radio-wrap
+              form.leadingform__form(action="") 
+                label.leadingform__label.leadingform__label_long
+                  .leadingform__label-text.leadingform__label-text_margin3 Legal company name
+                    span.leadingform__explanation *
+                  .leadingform__label-desc This is your full legal company name including the Inc. or LLC, etc.
+                  input.leadingform__input(type="text" required name="companyName")
+                label.leadingform__label
+                  .leadingform__label-text Trade name or DBA
+                  input.leadingform__input(type="text" placeholder="if applicable" required name="tradeName")
+                label.leadingform__label
+                  .leadingform__label-text Industry
+                  select.leadingform__select(name="industry") 
+                    option(value="") Please select 
+                    option(value="Lorem1") Lorem ipsum1
+                    option(value="Lorem2") Lorem ipsum2
+                    option(value="Lorem3") Lorem ipsum3
+                    option(value="Lorem4") Lorem ipsum4
+                    option(value="Lorem5") Lorem ipsum5
+                label.leadingform__label.leadingform__label_long 
+                  .leadingform__label-text Approximately, what is your annual company revenue?
+                    span.leadingform__explanation *
+                  select.leadingform__select(name="revenue") 
+                    option(value="") Please select 
+                    option(value="Lorem1") Lorem ipsum1
+                    option(value="Lorem2") Lorem ipsum2
+                    option(value="Lorem3") Lorem ipsum3
+                    option(value="Lorem4") Lorem ipsum4
+                    option(value="Lorem5") Lorem ipsum5
+                label.leadingform__label.leadingform__label_long 
+                  .leadingform__label-text Entity filing type
+                    span.leadingform__explanation *
+                  select.leadingform__select(name="entityFilingType") 
+                    option(value="") Please select 
+                    option(value="Lorem1") Lorem ipsum1
+                    option(value="Lorem2") Lorem ipsum2
+                    option(value="Lorem3") Lorem ipsum3
+                    option(value="Lorem4") Lorem ipsum4
+                    option(value="Lorem5") Lorem ipsum5
+                label.leadingform__label.leadingform__label_long
+                  .leadingform__label-text Website URL
+                  input.leadingform__input(type="text" name="webUrl")
+                label.leadingform__label.leadingform__label_long
+                  .leadingform__label-text Address line 1
+                    span.leadingform__explanation *
+                  input.leadingform__input(type="text" name="address1")
+                label.leadingform__label.leadingform__label_long
+                  .leadingform__label-text Address line 2
+                  input.leadingform__input(type="text" name="address2")
+                label.leadingform__label.leadingform__label_short
+                  .leadingform__label-text City
+                    span.leadingform__explanation *
+                  input.leadingform__input(type="text" required name="city")
+                label.leadingform__label.leadingform__label_short
+                  .leadingform__label-text State
+                    span.leadingform__explanation *
+                  select.leadingform__select(name="state") 
+                    option(value="") Please select 
+                    option(value="Lorem1") Lorem ipsum1
+                    option(value="Lorem2") Lorem ipsum2
+                    option(value="Lorem3") Lorem ipsum3
+                    option(value="Lorem4") Lorem ipsum4
+                    option(value="Lorem5") Lorem ipsum5
+                label.leadingform__label.leadingform__label_short
+                  .leadingform__label-text Postal code
+                    span.leadingform__explanation *
+                  input.leadingform__input(type="number" required name="postalCode")
+                .leadingform__label-checkbox-wrap
+                  label.leadingform__label.leadingform__label_checkbox
+                    input.leadingform__checkbox.visually-hidden(type="checkbox" name="agreement" required)
+                    .leadingform__label-text.leadingform__label-text_checkbox I agree to terms and conditions to process my data
+                      span.leadingform__explanation *
+              button.leadingform__link.btn.btn_blue.btn_long(type="submit" onclick="document.location='./leadingform-taxes-payroll.html'") Next Step
+              
+    include html/footer.pug
+    include html/ending.pug
