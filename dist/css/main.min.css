@@ -1634,6 +1634,11 @@ hr {
   padding-bottom: 125px;
 }
 @media (max-width: 576px) {
+  .leadingform {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 576px) {
   .leadingform__btn {
     align-self: flex-end;
   }

@@ -558,6 +558,9 @@
 .leadingform {
   padding-top: 70px;
   padding-bottom: 125px;
+  @media (max-width: 576px) {
+    padding-top: 30px;
+  }
   &__btn {
     @media (max-width: 576px) {
       // width: unset;
